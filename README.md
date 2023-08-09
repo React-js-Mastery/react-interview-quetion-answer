@@ -260,7 +260,7 @@ Now you can use the `CounterApp` component in your main `App.js` as before.
 In this updated example, the `CounterApp` component manages the count state and passes it down to both the `CounterDisplay` and `CounterControls` components. The `CounterControls` component receives the increment and decrement functions as props and uses them to update the count in the `CounterApp` component. This separates the concerns of displaying the count and controlling the count into different components.
 </details>
 <details>
- <summary>7. What is **cleanup function** in React</summary>
+ <summary> <h3>7. What is <b>cleanup function</b> in React</h3></summary>
  In React, a cleanup function typically refers to the cleanup logic that needs to be executed when a component is unmounted or before it is re-rendered. This is commonly used with side effects like subscriptions, timers, or event listeners, to ensure that they are properly removed when the component is no longer in use.
 
 React provides a built-in way to handle cleanup logic using the `useEffect` hook. The `useEffect` hook allows you to specify a function that will be executed when the component unmounts or before the effect runs again.
@@ -300,5 +300,38 @@ In the above example, the `useEffect` hook takes a function as its first argumen
 The empty dependency array (`[]`) passed as the second argument to `useEffect` ensures that the effect and cleanup only run once when the component mounts. If you were to include dependencies in the array, the effect would also run whenever those dependencies change, and the cleanup would occur before the new effect runs.
 
 Remember that cleanup functions are important to prevent memory leaks and ensure that resources are properly released when a component is removed from the DOM.
+
+</details>
+
+<details>
+<summary><h3>What does mean by state and its use in react? </h3></summary>
+
+ State is used to store information that can be modified by the component itself or influenced by user interactions, server responses, timers, and so on. When the state of a component changes, React automatically re-renders the component, updating the user interface to reflect the new state.
+
+State is particularly useful for creating interactive and dynamic user interfaces. For instance, if you're building a counter component, the count value would be stored in the component's state. When the user clicks a button to increase or decrease the count, the state is updated, causing React to re-render the component and display the updated count.
+</details>
+
+<details>
+<summary><h3>What is JSX and why do we use it instead of js? </h3></summary>
+
+JSX stands for "JavaScript XML." It's a syntax extension for JavaScript that's primarily used with libraries like React to describe the structure and composition of user interfaces in a more declarative way.
+
+JSX allows developers to write HTML-like code within JavaScript code. This code is then transpiled (converted) into regular JavaScript using a tool like Babel before it's executed in a web browser or a JavaScript runtime environment. JSX combines JavaScript's functional capabilities with the familiar syntax of HTML, making it easier to work with complex UI components and their interactions.
+
+> simple example of JSX usage within a React component:
+> ```jsx
+> import React from 'react';
+> 
+> function App() {
+>   return (
+>     <div>
+>       <h1>Hello, JSX!</h1>
+>       <p>This is a JSX example.</p>
+>     </div>
+>   );
+> }
+> 
+> export default App;
+> ```
 
 </details>
