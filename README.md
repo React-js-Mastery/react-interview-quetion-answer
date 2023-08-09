@@ -168,5 +168,137 @@ In both examples, the state (`count` in this case) is being managed by React. Wh
 </details>
 
 <details>
-<summary><h3>6. Create Counter App using Class Component and constructor method </h3></summary>
+<summary><h3>6. Create Counter App using Class Component and constructor method and displaying the count and controlling the count into different components</h3></summary>
+
+ We'll use a parent component to manage the count state and pass it down to the child components.
+
+1. Create a file named `CounterApp.js`:
+
+```jsx
+import React, { Component } from 'react';
+import CounterDisplay from './CounterDisplay';
+import CounterControls from './CounterControls';
+
+class CounterApp extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      count: 0,
+    };
+  }
+
+  incrementCount = () => {
+    this.setState(prevState => ({
+      count: prevState.count + 1,
+    }));
+  };
+
+  decrementCount = () => {
+    this.setState(prevState => ({
+      count: prevState.count - 1,
+    }));
+  };
+
+  render() {
+    return (
+      <div>
+        <h1>Counter App using Class Component</h1>
+        <CounterDisplay count={this.state.count} />
+        <CounterControls
+          count={this.state.count}
+          incrementCount={this.incrementCount}
+          decrementCount={this.decrementCount}
+        />
+      </div>
+    );
+  }
+}
+
+export default CounterApp;
+```
+
+2. Create a file named `CounterDisplay.js`:
+
+```jsx
+import React from 'react';
+
+class CounterDisplay extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Count: {this.props.count}</h2>
+      </div>
+    );
+  }
+}
+
+export default CounterDisplay;
+```
+
+3. Create a file named `CounterControls.js`:
+
+```jsx
+import React from 'react';
+
+class CounterControls extends React.Component {
+  render() {
+    return (
+      <div>
+        <button onClick={this.props.incrementCount}>Increment</button>
+        <button onClick={this.props.decrementCount}>Decrement</button>
+      </div>
+    );
+  }
+}
+
+export default CounterControls;
+```
+
+Now you can use the `CounterApp` component in your main `App.js` as before.
+
+In this updated example, the `CounterApp` component manages the count state and passes it down to both the `CounterDisplay` and `CounterControls` components. The `CounterControls` component receives the increment and decrement functions as props and uses them to update the count in the `CounterApp` component. This separates the concerns of displaying the count and controlling the count into different components.
+</details>
+<details>
+ <summary>7. What is **cleanup function** in React</summary>
+ In React, a cleanup function typically refers to the cleanup logic that needs to be executed when a component is unmounted or before it is re-rendered. This is commonly used with side effects like subscriptions, timers, or event listeners, to ensure that they are properly removed when the component is no longer in use.
+
+React provides a built-in way to handle cleanup logic using the `useEffect` hook. The `useEffect` hook allows you to specify a function that will be executed when the component unmounts or before the effect runs again.
+
+Here's an example of how you might use a cleanup function in a React component:
+
+```jsx
+import React, { useState, useEffect } from 'react';
+
+function CleanupExample() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    // This function will be executed when the component mounts
+    console.log('Component mounted');
+
+    // Cleanup function
+    return () => {
+      console.log('Component will unmount');
+      // Perform cleanup tasks here, such as unsubscribing, clearing timers, etc.
+    };
+  }, []);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+
+export default CleanupExample;
+```
+
+In the above example, the `useEffect` hook takes a function as its first argument, which is the effect itself. Inside this function, you define the logic that needs to run when the component mounts. The returned function within the effect serves as the cleanup function, which will be executed when the component unmounts.
+
+The empty dependency array (`[]`) passed as the second argument to `useEffect` ensures that the effect and cleanup only run once when the component mounts. If you were to include dependencies in the array, the effect would also run whenever those dependencies change, and the cleanup would occur before the new effect runs.
+
+Remember that cleanup functions are important to prevent memory leaks and ensure that resources are properly released when a component is removed from the DOM.
+
 </details>
