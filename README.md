@@ -1,5 +1,54 @@
 # React Interview Question / Answer
 
+```mdx-code-block
+
+/* Style for the navigation */
+nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 15px;
+}
+
+/* Style for the navigation links */
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Highlight the active link */
+a.active {
+  color: yellow;
+}
+
+/* Style for the code block */
+pre {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 10px;
+  overflow-x: auto;
+  border-radius: 4px;
+}
+
+/* Style for the code lines */
+code {
+  display: block;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+```
+
 ## 1. What is React and Feature of React?
 
 <details>
@@ -259,18 +308,16 @@ To use it, you'll first need to install the package using a tool like npm or yar
 
 <p>Simple example of how you might use React Router:</p>
 
-<ol>
-   
+<ul>   
 <li><p>Install React Router using npm or yarn: <code>npm install react-router-dom</code></p></li>
-
 <li><p>Import the necessary components from the library:</p></li
+</ul>
    
 <pre><code class="lang-jsx"><span class="hljs-keyword">import</span> { BrowserRouter <span class="hljs-keyword">as</span> Router, Route, Link } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-router-dom'</span>;
 </code></pre>
 
-<br/>
 
-<li>Set up your routes in your main app component:</li>
+<ul> <li>Set up your routes in your main app component:</li>  </ul>
 
 <pre><code class="lang-jsx">function App() {
   return (
@@ -298,22 +345,12 @@ To use it, you'll first need to install the package using a tool like npm or yar
 </code></pre>
 
 
+<ul>   
 <li>Create your individual page components (<code>Home</code>, <code>About</code>, <code>Contact</code>), and your app will show the appropriate component based on the URL.</li>
-
-</ol>
+</ul>
 
 <p>So, when someone clicks on the &quot;About&quot; link, the router guides your app to show the <code>About</code> component. This way, you can create multi-page experiences within your single-page React app. It&#39;s like navigating through your app&#39;s house with the help of React Router&#39;s map!</p>
    
 </details>
 
-<details>
-    <summary>Answer:</summary>
-</details>
 
-<details>
-    <summary>Answer:</summary>
-</details>
-
-<details>
-    <summary>Answer:</summary>
-</details>
