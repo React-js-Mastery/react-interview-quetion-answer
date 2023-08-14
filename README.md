@@ -45,28 +45,114 @@ But with SPAs, things work differently. When you interact with a button or a lin
 </details>
 
 <details>
-    <summary><h3>What is the difference between class and functional components?</h3></summary>
+  <summary><h3>What is the difference between class and functional components?</h3></summary>
     <table width="100%">
-     
+      <tr>
+         <th>Aspect</th>
+         <th>Class Components</th>
+         <th>Functional Components</th>
+      </tr>
+      <tr>
+         <td>Definition</td>
+         <td>Defined using ES6 classes.</td>
+         <td>Defined as JavaScript functions.</td>     
+      </tr>
+     <tr>
+        <td>State Management</td>
+        <td>Can have local state using <code>this.state.</code></td>
+        <td>Use the <code>useState</code> hook for state.</td>     
+     </tr>
+     <tr>
+        <td>Lifecycle Methods</td>
+        <td>Use lifecycle methods like <code>componentDidMount</code>, etc.</td>
+        <td>Use the <code>useEffect</code> hook.</td>     
+     </tr>
+     <tr>
+        <td>Syntax</td>
+        <td>More verbose and requires binding of event handlers.</td>
+        <td>Simpler syntax and no binding needed.</td>     
+     </tr>
+     <tr>
+        <td>Performance</td>
+        <td>Slightly heavier due to JavaScript classes.</td>
+        <td>Lighter weight, potentially better performance.</td>     
+     </tr>
+     <tr>
+        <td>Reusability</td>
+        <td>More complex to reuse logic.</td>
+        <td>Easier to reuse through custom hooks.</td>     
+     </tr>
+     <tr>
+        <td>Context and Refs</td>
+        <td>Easier access to `this.context` and refs.</td>
+        <td>No <code>this.context</code> and refs, but can use <code>useRef</code>.</td>     
+     </tr>
+     <tr>
+        <td>Learning Curve</td>
+        <td>Can be steeper, especially for beginners.</td>
+        <td>Generally easier for beginners to grasp.</td>     
+     </tr>
+     <tr>
+        <td>Modern React Practices</td>
+        <td>Not fully aligned with modern React practices.</td>
+        <td>More aligned with modern practices.</td>     
+     </tr>
    </table>
-    </details>
+
+</details>
+
+<details>
+    <summary><h3> Difference b/w Stateful and stateless Component?</h3></summary>
+
+<table width="100%">
+      <tr>
+         <th>Aspect</th>
+         <th>Stateful Components</th>
+         <th>Stateless Components</th>
+      </tr>
+      <tr>
+         <td>State Management</td>
+         <td>Manage their own state using <code>this.state</code>.</td>
+         <td>Receive data and display it, no internal state.</td>     
+      </tr>
+     <tr>
+        <td>Purpose</td>
+        <td>Used for dynamic behavior and interaction.</td>
+        <td>Used for displaying UI without complex logic.</td>     
+     </tr>
+     <tr>
+        <td>Functional Type</td>
+        <td>Class components.</td>
+        <td>Function components (using <code>function</code> keyword).</td>     
+     </tr>
+     <tr>
+        <td>Lifecycle Methods</td>
+        <td>Have access to lifecycle methods like <code>componentDidMount</code>, <code>componentDidUpdate</code>, etc.</td>
+        <td>No lifecycle methods until React 16.8.</td>     
+     </tr>
+     <tr>
+        <td>Reusability</td>
+        <td>Slightly less reusable due to internal state.</td>
+        <td>Highly reusable as they don't hold internal state.</td>     
+     </tr>
+     <tr>
+        <td>Performance</td>
+        <td>Can have some impact on performance due to state updates.</td>
+        <td>Generally better for performance as they don't manage state.</td>     
+     </tr>
+        
+   </table>
+
+</details>
 
 <details>
     <summary><h3></h3></summary>
 
-
-    </details>
-
-<details>
-    <summary><h3></h3></summary>
-
-    </details>
+</details>
 
 <details>
     <summary><h3></h3></summary>
 
-    </details>
+</details>
 
-<details>
-    <summary><h3></h3></summary>
 
