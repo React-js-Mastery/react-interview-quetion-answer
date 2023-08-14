@@ -9,18 +9,20 @@
 <p>React is a JavaScript library that helps you build user interfaces for your websites or web applications. Think of it as a set of tools that make it easier for you to create interactive and dynamic elements on your web pages. </p>
 
 <h3>features of React:</h3>
+<ol>
+<li> <b>Component-Based:</b> React divides your web page into smaller building blocks called components. These components are like puzzle pieces that you can put together to create a complete picture. Each component can have its own logic and behavior, making it easier to manage and reuse code.</li>
 
-1. <b>Component-Based:</b> React divides your web page into smaller building blocks called components. These components are like puzzle pieces that you can put together to create a complete picture. Each component can have its own logic and behavior, making it easier to manage and reuse code.
+<li> <b>Virtual DOM:</b> React uses something called a Virtual DOM (Document Object Model) to keep track of changes in your components. When something in your component changes, React doesn't immediately update the actual webpage. Instead, it updates the Virtual DOM first, and then figures out the most efficient way to update the real DOM. This makes your web app faster and more efficient.</li>
 
-2. <b>Virtual DOM:</b> React uses something called a Virtual DOM (Document Object Model) to keep track of changes in your components. When something in your component changes, React doesn't immediately update the actual webpage. Instead, it updates the Virtual DOM first, and then figures out the most efficient way to update the real DOM. This makes your web app faster and more efficient.
+<li> <b>Declarative Syntax:</b> In React, you describe what you want your user interface to look like in a simple and declarative way. You tell React how you want things to be, and it takes care of updating the actual interface for you. This is different from the traditional way of web development where you might have had to worry about each small change.</li>
 
-3. <b>Declarative Syntax:</b> In React, you describe what you want your user interface to look like in a simple and declarative way. You tell React how you want things to be, and it takes care of updating the actual interface for you. This is different from the traditional way of web development where you might have had to worry about each small change.
+<li> <b>Reusability</b> Since React encourages you to break your interface into components, you can reuse these components across different parts of your website. This saves you time and helps maintain consistency in your design and functionality.</li>
 
-4. <b>Reusability</b> Since React encourages you to break your interface into components, you can reuse these components across different parts of your website. This saves you time and helps maintain consistency in your design and functionality.
+<li> <b>One-Way Data Flow:</b> React follows a one-way data flow, which means that the data flows in a single direction: from parent components to child components. This makes it easier to understand how data changes and where those changes are coming from.</li>
 
-5. <b>One-Way Data Flow:</b> React follows a one-way data flow, which means that the data flows in a single direction: from parent components to child components. This makes it easier to understand how data changes and where those changes are coming from.
+<li><b>JSX:</b> JSX is a syntax extension for JavaScript that React uses. It allows you to write HTML-like code within your JavaScript, making it easier to visualize how your components will look in the browser. </li>
 
-6. <b>JSX:</b> JSX is a syntax extension for JavaScript that React uses. It allows you to write HTML-like code within your JavaScript, making it easier to visualize how your components will look in the browser.
+</ol>
 
 Overall, React simplifies the process of building dynamic and interactive web interfaces by breaking down your webpage into smaller reusable parts and efficiently managing updates to the user interface. 
 </details>
