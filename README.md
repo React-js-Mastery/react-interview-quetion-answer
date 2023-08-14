@@ -1,8 +1,5 @@
 # React Interview Question / Answer
 
-```mdx-code-block
-<link rel="stylesheet" href="./styles.css">
-```
 
 ## 1. What is React and Feature of React?
 
@@ -309,3 +306,51 @@ To use it, you'll first need to install the package using a tool like npm or yar
 </details>
 
 
+## 11. How do you pass data from parent to child?
+
+<details>
+    <summary>Answer:</summary>
+
+Imagine you have a family of components in React. The parent component is like the "big boss," and the child component is like the "helper." Sometimes, the big boss needs to give some important information to the helper to get things done. This is where passing data from the parent to the child comes in.
+
+<b>how you can do it:</b>
+
+<ol>
+
+<li> <b>Parent Component (Big Boss):</b> In the parent component, you create the data you want to share. This could be anything, like a number, a text, or even a list of things. </li>
+
+<li> <b>Child Component (Helper):</b> In the child component, you can't directly access the data in the parent. But the parent can give you a special kind of task called a "prop." Think of a prop as a note that the parent gives you. This note contains the information you need to know. </li>
+
+<li> <b>Passing the Prop:</b> Back in the parent component, you can attach the note (prop) to the child component when you use it in your code. It's like giving the helper the important task along with the information needed to complete it. </li>
+
+</ol>
+
+   <p>Simple example:</p>
+   
+<pre><code class="lang-jsx"><span class="hljs-comment">// Parent Component</span>
+<span class="hljs-keyword">import</span> React from <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> ChildComponent from <span class="hljs-string">'./ChildComponent'</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ParentComponent</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> importantInfo = <span class="hljs-string">"Hello from the parent!"</span>;
+
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ChildComponent</span> <span class="hljs-attr">message</span>=<span class="hljs-string">{importantInfo}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  )</span>;
+}
+
+<span class="hljs-comment">// Child Component</span>
+<span class="hljs-keyword">import</span> React from <span class="hljs-string">'react'</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ChildComponent</span>(<span class="hljs-params">props</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{props.message}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>;</span>
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> ChildComponent;
+</code></pre>
+
+<p>In this example, the parent component creates the <code>importantInfo</code> and passes it to the child component as a prop called <code>message</code>. The child component receives the <code>message</code> prop and displays it.</p>
+
+</details>
