@@ -1,6 +1,6 @@
 # React Interview Question / Answer
 
-<h3>1. What is React and Feature of React?</h3>
+## 1. What is React and Feature of React?
 
 <details>
 
@@ -8,24 +8,24 @@
 
 <p>React is a JavaScript library that helps you build user interfaces for your websites or web applications. Think of it as a set of tools that make it easier for you to create interactive and dynamic elements on your web pages. </p>
 
-**features of React:**
+<h3>features of React:</h3>
 
-1. **Component-Based**: React divides your web page into smaller building blocks called components. These components are like puzzle pieces that you can put together to create a complete picture. Each component can have its own logic and behavior, making it easier to manage and reuse code.
+1. <b>Component-Based:</b> React divides your web page into smaller building blocks called components. These components are like puzzle pieces that you can put together to create a complete picture. Each component can have its own logic and behavior, making it easier to manage and reuse code.
 
-2. **Virtual DOM**: React uses something called a Virtual DOM (Document Object Model) to keep track of changes in your components. When something in your component changes, React doesn't immediately update the actual webpage. Instead, it updates the Virtual DOM first, and then figures out the most efficient way to update the real DOM. This makes your web app faster and more efficient.
+2. <b>Virtual DOM:</b> React uses something called a Virtual DOM (Document Object Model) to keep track of changes in your components. When something in your component changes, React doesn't immediately update the actual webpage. Instead, it updates the Virtual DOM first, and then figures out the most efficient way to update the real DOM. This makes your web app faster and more efficient.
 
-3. **Declarative Syntax**: In React, you describe what you want your user interface to look like in a simple and declarative way. You tell React how you want things to be, and it takes care of updating the actual interface for you. This is different from the traditional way of web development where you might have had to worry about each small change.
+3. <b>Declarative Syntax:</b> In React, you describe what you want your user interface to look like in a simple and declarative way. You tell React how you want things to be, and it takes care of updating the actual interface for you. This is different from the traditional way of web development where you might have had to worry about each small change.
 
-4. **Reusability**: Since React encourages you to break your interface into components, you can reuse these components across different parts of your website. This saves you time and helps maintain consistency in your design and functionality.
+4. <b>Reusability</b> Since React encourages you to break your interface into components, you can reuse these components across different parts of your website. This saves you time and helps maintain consistency in your design and functionality.
 
-5. **One-Way Data Flow**: React follows a one-way data flow, which means that the data flows in a single direction: from parent components to child components. This makes it easier to understand how data changes and where those changes are coming from.
+5. <b>One-Way Data Flow:</b> React follows a one-way data flow, which means that the data flows in a single direction: from parent components to child components. This makes it easier to understand how data changes and where those changes are coming from.
 
-6. **JSX**: JSX is a syntax extension for JavaScript that React uses. It allows you to write HTML-like code within your JavaScript, making it easier to visualize how your components will look in the browser.
+6. <b>JSX:</b> JSX is a syntax extension for JavaScript that React uses. It allows you to write HTML-like code within your JavaScript, making it easier to visualize how your components will look in the browser.
 
 Overall, React simplifies the process of building dynamic and interactive web interfaces by breaking down your webpage into smaller reusable parts and efficiently managing updates to the user interface. 
 </details>
 
-<h3>2. What is Virtual DOM?</h3>
+## 2. What is Virtual DOM?
 
 <details>
    <summary>Answer:</summary>
@@ -40,7 +40,7 @@ So, think of the Virtual DOM as a smart assistant that helps React update the we
 
 </details>
 
-<h3>3. What is SPA?</h3>
+## 3. What is SPA?
 
 <details>
     <summary>Answer:</summary>
@@ -51,7 +51,7 @@ But with SPAs, things work differently. When you interact with a button or a lin
 
 </details>
 
-<h3>4. What is the difference between class and functional components?</h3>
+## 4. What is the difference between class and functional components?
 
 <details>
   <summary>Answer:</summary>
@@ -110,7 +110,7 @@ But with SPAs, things work differently. When you interact with a button or a lin
 
 </details>
 
-<h3> 5. Difference b/w Stateful and stateless Component?</h3>
+## 5. Difference b/w Stateful and stateless Component?
 
 <details>
     <summary>Answer:</summary>
@@ -156,16 +156,43 @@ But with SPAs, things work differently. When you interact with a button or a lin
 
 </details>
 
-<h3></h3>
+## 6. What does mean by state and its use in react?
 
 <details>
-    <summary></summary>
+    <summary>Answer:</summary>
+In the context of web development and React JS, "state" refers to the data that a component holds and manages. Think of it as the current condition or information that a component keeps track of.
 
+<br/>
+
+Imagine you're building a to-do list app using React. The state would be where you keep track of the list of tasks. Let's break it down:
+
+1. <b>State:</b> Think of it as a container within a React component that holds data. This data can be anything you want, like numbers, text, arrays, or objects.
+
+2. <b>Usage:</b> When your app needs to display dynamic information that can change over time, you use state. For instance, in the to-do list app, the list of tasks can change as you add or complete tasks.
+
+
+In summary, state in React helps your components manage and remember data that can change as your app runs. It's a fundamental concept that allows your app to be interactive and responsive to user actions. 
 </details>
 
-<h3></h3>
+## What is JSX and why do we use it instead of js?
 <details>
-    <summary></summary>
+    <summary>Answer:</summary>
+JSX stands for "JavaScript XML." It's a special syntax that you use in React to describe what the user interface should look like. It might look a bit like HTML, but it's actually a mix of JavaScript and XML-like code.
+
+<b>why we use JSX in React:</b>
+
+1. <b>Readability:</b> JSX makes your code more readable and understandable. It closely resembles the actual UI you want to create, which makes it easier to visualize and work with.
+
+2. <b>Familiarity:</b> If you've worked with HTML before, JSX will feel somewhat familiar. This makes it easier for web developers to transition into React.
+
+3. <b>Components:</b> In React, you build your UI using components. JSX makes it simple to define these components by writing HTML-like code.
+
+4. <b>JavaScript Integration:</b> JSX allows you to embed JavaScript expressions directly within the markup. This dynamic nature lets you generate dynamic content and interact with data easily.
+
+5. <b>Performance:</b> Under the hood, JSX gets compiled to regular JavaScript by tools like Babel. This compiled code is optimized for better performance, making your app run faster.
+
+6. <b>Tooling:</b> JSX is well-supported by development tools and extensions, which can help catch errors and provide useful hints as you code.
+
 
 </details>
 
