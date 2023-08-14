@@ -252,23 +252,56 @@ To use it, you'll first need to install the package using a tool like npm or yar
     <summary>Answer:</summary>
 
 <p>Routing in React.js is like giving directions to your web application. Imagine your app as a big house with different rooms (components) inside it. Each room represents a different page or view in your app. Now, routing is like having a map with paths that lead you from one room to another.</p>
+
 <p>Let&#39;s say you&#39;re building a website with a homepage, an about page, and a contact page. In React, you&#39;d create a component for each of these pages. Then, you&#39;d use a router to decide which component (room) should be shown when the user clicks on a link or enters a specific URL.</p>
+
 <p>React Router is like your map. It helps you set up these paths and tells your app which component to show when a certain path is visited. For example, if someone goes to &quot;/about&quot; in their browser, the router knows to show the About component, which is like opening the door to the &quot;About&quot; room in your app&#39;s house.</p>
-<p>Here&#39;s a simple example of how you might use React Router:</p>
+
+<p>Simple example of how you might use React Router:</p>
+
 <ol>
-<li><p>Install React Router using npm or yarn: <code>npm install react-router-dom</code></p>
-</li>
-<li><p>Import the necessary components from the library:</p>
-</li>
-</ol>
+   
+<li><p>Install React Router using npm or yarn: <code>npm install react-router-dom</code></p></li>
+
+<li><p>Import the necessary components from the library:</p></li
+   
 <pre><code class="lang-jsx"><span class="hljs-keyword">import</span> { BrowserRouter <span class="hljs-keyword">as</span> Router, Route, Link } <span class="hljs-keyword">from</span> <span class="hljs-string">'react-router-dom'</span>;
 </code></pre>
 
+<br/>
+
+<li>Set up your routes in your main app component:</li>
+
+<pre><code class="lang-jsx">function App() {
+  return (
+    <span class="hljs-tag">&lt;<span class="hljs-name">Router</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">nav</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">"/"</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">"/about"</span>&gt;</span>About<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">Link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">"/contact"</span>&gt;</span>Contact<span class="hljs-tag">&lt;/<span class="hljs-name">Link</span>&gt;</span>
+          <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">"/"</span> <span class="hljs-attr">exact</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{Home}</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">"/about"</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{About}</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">Route</span> <span class="hljs-attr">path</span>=<span class="hljs-string">"/contact"</span> <span class="hljs-attr">component</span>=<span class="hljs-string">{Contact}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">Router</span>&gt;</span>
+  );
+}
+</code></pre>
 
 
-<ol>
 <li>Create your individual page components (<code>Home</code>, <code>About</code>, <code>Contact</code>), and your app will show the appropriate component based on the URL.</li>
+
 </ol>
+
 <p>So, when someone clicks on the &quot;About&quot; link, the router guides your app to show the <code>About</code> component. This way, you can create multi-page experiences within your single-page React app. It&#39;s like navigating through your app&#39;s house with the help of React Router&#39;s map!</p>
    
 </details>
