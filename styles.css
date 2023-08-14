@@ -1,0 +1,64 @@
+/* Reset default margin and padding for consistency */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color for the entire page */
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the interview questions and answers */
+.mdx-code-block {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Style question headers */
+.mdx-code-block h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Style answer content */
+.mdx-code-block p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Style code blocks */
+.mdx-code-block code {
+  display: block;
+  padding: 10px;
+  background-color: #f4f4f4;
+  border-radius: 4px;
+}
+
+/* Style details and summaries */
+details {
+  margin-bottom: 20px;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+details summary:focus {
+  outline: none;
+}
+
+details p {
+  margin-top: 10px;
+}
+
+/* Add a bit of spacing between details blocks */
+details + details {
+  margin-top: 20px;
+}
