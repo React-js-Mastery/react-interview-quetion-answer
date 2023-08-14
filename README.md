@@ -1,9 +1,12 @@
-<h1>React Interview Question / Answer</h1>
+# React Interview Question / Answer
+
+<h3>1. What is React and Feature of React?</h3>
 
 <details>
-    <summary><h3>1. What is React and Feature of React?</h3></summary>
 
-React is a JavaScript library that helps you build user interfaces for your websites or web applications. Think of it as a set of tools that make it easier for you to create interactive and dynamic elements on your web pages.
+<summary>Answer:</summary>
+
+<p>React is a JavaScript library that helps you build user interfaces for your websites or web applications. Think of it as a set of tools that make it easier for you to create interactive and dynamic elements on your web pages. </p>
 
 **features of React:**
 
@@ -22,8 +25,10 @@ React is a JavaScript library that helps you build user interfaces for your webs
 Overall, React simplifies the process of building dynamic and interactive web interfaces by breaking down your webpage into smaller reusable parts and efficiently managing updates to the user interface. 
 </details>
 
+<h3>2. What is Virtual DOM?</h3>
+
 <details>
-    <summary><h3>2. What is Virtual DOM?</h3></summary>
+   <summary>Answer:</summary>
 
 Imagine you have a real-world painting and a copy of that painting. You want to make changes to the copy without affecting the original. The Virtual DOM in React is like that copy of the painting.
 
@@ -35,8 +40,10 @@ So, think of the Virtual DOM as a smart assistant that helps React update the we
 
 </details>
 
+<h3>3. What is SPA?</h3>
+
 <details>
-    <summary><h3>3. What is SPA?</h3></summary>
+    <summary>Answer:</summary>
     
 An SPA, which stands for "Single Page Application," is a type of website that loads and displays all its content on a single web page. Traditional websites often load new pages when you click on links, which can make them a bit slower as the whole page needs to reload.
 
@@ -44,8 +51,10 @@ But with SPAs, things work differently. When you interact with a button or a lin
 
 </details>
 
+<h3>4. What is the difference between class and functional components?</h3>
+
 <details>
-  <summary><h3>What is the difference between class and functional components?</h3></summary>
+  <summary>Answer:</summary>
     <table width="100%">
       <tr>
          <th>Aspect</th>
@@ -84,7 +93,7 @@ But with SPAs, things work differently. When you interact with a button or a lin
      </tr>
      <tr>
         <td>Context and Refs</td>
-        <td>Easier access to `this.context` and refs.</td>
+        <td>Easier access to <code>this.context</code> and refs.</td>
         <td>No <code>this.context</code> and refs, but can use <code>useRef</code>.</td>     
      </tr>
      <tr>
@@ -101,8 +110,10 @@ But with SPAs, things work differently. When you interact with a button or a lin
 
 </details>
 
+<h3> 5. Difference b/w Stateful and stateless Component?</h3>
+
 <details>
-    <summary><h3> Difference b/w Stateful and stateless Component?</h3></summary>
+    <summary>Answer:</summary>
 
 <table width="100%">
       <tr>
@@ -145,13 +156,16 @@ But with SPAs, things work differently. When you interact with a button or a lin
 
 </details>
 
+<h3></h3>
+
 <details>
-    <summary><h3></h3></summary>
+    <summary></summary>
 
 </details>
 
+<h3></h3>
 <details>
-    <summary><h3></h3></summary>
+    <summary></summary>
 
 </details>
 
