@@ -354,3 +354,56 @@ Imagine you have a family of components in React. The parent component is like t
 <p>In this example, the parent component creates the <code>importantInfo</code> and passes it to the child component as a prop called <code>message</code>. The child component receives the <code>message</code> prop and displays it.</p>
 
 </details>
+
+## 12. What is the Difference between react and react native? Which one is library or framework?
+
+## 13. How do you switch one component to another, Conditional Rendering?
+
+## 14. Why do we need keys in react less?
+
+## 15. Difference between Axios and fetch
+
+## 16. how to fetch the data from the JSON format 
+[https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users) 
+
+## 17. What are React Life cycles Explain each one with Example?
+
+## 18. What is Props Drilling Concept ?What is State Uplifting ?
+
+## 20. What is Context api?
+
+## 21. What is UseState Hook ?(Implementation)
+
+## 22. What is useEffect Hook ?(Implementation)
+
+## 23. clean up in useEffect
+
+## 24. What is UseReducer Hook ?(Implementation)
+
+## 25. What is UseMemo Hook ?(Implementation)
+
+## 26. What is UseRef Hook ?(Implementation)
+
+## 27. High Order Component in react js ?
+
+## 28. Difference between callback and useCallback Hook ?
+
+## 29. What is lazy loading in react ?
+
+## 30. Difference between useEffect and useContext ?
+
+## 31. Do you know about SEO ? Is it true that react js supports SEO support
+
+## 32. What is the use of useCallback and useMemo?
+
+## 33. Do you know about redux?
+
+## 34. What is an event in react?
+
+## 35. What is memory leak and how to overcome?
+
+## 36. Do you prefer function-based or class component and why ?
+
+## 37. Explain reducer as pure function in redux
+
+## 38. What do you know about NPM?
