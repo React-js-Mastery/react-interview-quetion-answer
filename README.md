@@ -329,28 +329,30 @@ Imagine you have a family of components in React. The parent component is like t
 
    ```jsx
    // Parent Component
-import React from 'react';
-import ChildComponent from './ChildComponent';
+   import React from 'react';
+   import ChildComponent from './ChildComponent';
 
-function ParentComponent() {
-  const importantInfo = "Hello from the parent!";
+   function ParentComponent() {
+     const importantInfo = "Hello from the parent!";
+   
+     return (
+       <div>
+         <ChildComponent message={importantInfo} />
+       </div>
+     );
+   }
+   ```
 
-  return (
-    <div>
-      <ChildComponent message={importantInfo} />
-    </div>
-  );
-}
+   ```jsx
+   // Child Component
+   import React from 'react';
 
-// Child Component
-import React from 'react';
+   function ChildComponent(props) {
+     return <p>{props.message}</p>;
+   }
 
-function ChildComponent(props) {
-  return <p>{props.message}</p>;
-}
-
-export default ChildComponent;
-```
+   export default ChildComponent;
+   ```
 
 <p>In this example, the parent component creates the <code>importantInfo</code> and passes it to the child component as a prop called <code>message</code>. The child component receives the <code>message</code> prop and displays it.</p>
 
