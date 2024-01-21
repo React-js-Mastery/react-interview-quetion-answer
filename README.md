@@ -327,32 +327,30 @@ Imagine you have a family of components in React. The parent component is like t
 
    <p>Simple example:</p>
 
-   ```jsx
-   // Parent Component
-   import React from 'react';
-   import ChildComponent from './ChildComponent';
+      
+<pre><code class="lang-jsx"><span class="hljs-comment">// Parent Component</span>
+<span class="hljs-keyword">import</span> React from <span class="hljs-string">'react'</span>;
+<span class="hljs-keyword">import</span> ChildComponent from <span class="hljs-string">'./ChildComponent'</span>;
 
-   function ParentComponent() {
-     const importantInfo = "Hello from the parent!";
-   
-     return (
-       <div>
-         <ChildComponent message={importantInfo} />
-       </div>
-     );
-   }
-   ```
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ParentComponent</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">const</span> importantInfo = <span class="hljs-string">"Hello from the parent!"</span>;
 
-   ```jsx
-   // Child Component
-   import React from 'react';
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">ChildComponent</span> <span class="hljs-attr">message</span>=<span class="hljs-string">{importantInfo}</span> /&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  )</span>;
+}
 
-   function ChildComponent(props) {
-     return <p>{props.message}</p>;
-   }
+<span class="hljs-comment">// Child Component</span>
+<span class="hljs-keyword">import</span> React from <span class="hljs-string">'react'</span>;
 
-   export default ChildComponent;
-   ```
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">ChildComponent</span>(<span class="hljs-params">props</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{props.message}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>;</span>
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> ChildComponent;
+</code></pre>
 
 <p>In this example, the parent component creates the <code>importantInfo</code> and passes it to the child component as a prop called <code>message</code>. The child component receives the <code>message</code> prop and displays it.</p>
 
